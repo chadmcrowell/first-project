@@ -27,10 +27,6 @@
 	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	</div>
 
-
-
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.nav.js"></script>
 	<script type="text/javascript">
@@ -51,6 +47,11 @@
 		        //I get fired when you enter a section and I pass the list item of the section
 		    }
 		});
+		$(document).ready(function(){
+          $(window).scroll(function(){
+            $("#nav").css("position", "fixed")
+          })
+        })
 	</script>
 </body>
 </html>
